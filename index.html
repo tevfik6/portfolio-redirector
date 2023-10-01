@@ -1,6 +1,7 @@
 <script>
     const hostname = window.location.hostname;
-    if (/tue?mer.me/.test(hostname)) {
+    const tumerRegex = /tue?mer.me/;
+    if (tumerRegex.test(hostname)) {
         window.location.href = "https://tevfik." + hostname;
     }
 </script>
